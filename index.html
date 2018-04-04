@@ -7,11 +7,16 @@
 
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+		<link rel="shortcut icon" href="/DoesMySiteDeserveRecognition.png">
 		<style>
-		@media print {header::before{content: url(http://chart.apis.google.com/chart?chs=120x120&cht=qr&chl=http%3A%2F%2Fdoesmysitedeserverecognition.com%2F);position:absolute;top:-.125in;right:-.125in;}}
-		@media screen {main,header{max-width:50em;margin:auto;}}
-		p,li{line-height:1.4;}
+		body{font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;line-height:1.5;}
+		ol{list-style-type:decimal;margin-top:.5em;}
+		ol ol{list-style-type:lower-alpha;}
+		ol ol ol{list-style-type:lower-roman;}
+		li{margin-bottom:.5em;}	
+		footer{margin-top:4em;}
+		@media print {header img[src$='.svg']{max-width:5in;}header::before{content: url(http://chart.apis.google.com/chart?chs=120x120&cht=qr&chl=http%3A%2F%2Fdoesmysitedeserverecognition.com%2F);position:absolute;top:-.125in;right:-.125in;}body{color:#000;}li::before{content:'';display:inline-block;width:1em;height:1em;box-sizing:border-box;border:.1em solid #000;margin:0 .5em -.15em 0;}main a[href]::after{content:" [" attr(href)"]";word-wrap:break-word;}a:link,a:visited{color:#000;text-decoration:none;}li{orphans:0;widows:0;}}
+		@media screen {body{background-color:#f5f5f5;color:#333;}main,header,footer{max-width:50em;margin-left:auto;margin-right:auto;font-size:120%;}}
 		</style>
 
 		<link rel="canonical" href="https://DoesMySiteDeserveRecognition.com/">
@@ -49,7 +54,7 @@
 
 		<main>
 
-			<h1>The Critical Question to Ask</h1>
+			<h1>Understanding the Question</h1>
 
 			<p>
 			Hoping to get an award? Recommended as a resource? Used as a case study in some important book?
@@ -66,11 +71,11 @@
 			<h2>Ensure the site…</h2>
 
 			<ol>
-			 <li>Passes the Web Content Accessibility Guidelines (WCAG) 2.0 AA.
-				<ul>
+			 <li>Passes the Web Content Accessibility Guidelines (WCAG) 2.0/2.1 AA.
+				<ol>
 				 <li>A great reference from the Web Accessibility Initiative (WAI) from the World Wide Web Consortium (W3C), <a href="https://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0</a></li>
 				 <li>There are also a series of tools to help you perform some automated testing, knowing that no tool can capture all issues:
-					<ul>
+					<ol>
 					 <li><a href="https://validator.w3.org/nu/">W3C Nu HTML Checker</a></li>
 					 <li><a href="https://tenon.io/">Tenon</a></li>
 					 <li><a href="http://www.deque.com/products/axe/">aXe</a></li>
@@ -79,20 +84,20 @@
 					 <li><a href="http://khan.github.io/tota11y/">tota11y</a></li>
 					 <li><a href="https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en">Chrome Accessibility Developer Tools</a></li>
 					 <li>The W3C also maintains a <a href="https://www.w3.org/WAI/ER/tools/">Web Accessibility Evaluation Tools List</a>, with some hits and misses</li>
-					</ul>
+					</ol>
 				 </li>
 				 <li>Follows the <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/intro.html#introduction-fourprincs-head">P.O.U.R. principles</a> behind WCAG 2.0:
-					<ul>
+					<ol>
 					 <li>Perceivable - Information and user interface components must be presentable to users in ways they can perceive.</li>
 					 <li>Operable - User interface components and navigation must be operable.</li>
 					 <li>Understandable - Information and the operation of user interface must be understandable.</li>
 					 <li>Robust - Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.</li>
-					</ul>
+					</ol>
 				 </li>
-				</ul>
+				</ol>
 			 </li>
 			 <li>Works in common screen readers.
-				<ul>
+				<ol>
 				 <li><a href="https://www.apple.com/voiceover/info/guide/">Enabling VoiceOver on OSX / MacOS</a></li>
 				 <li><a href="https://support.apple.com/en-us/HT204390">Enabling VoiceOver on iOS</a></li>
 				 <li><a href="https://support.microsoft.com/en-us/help/17173/windows-10-hear-text-read-aloud">Enabling Narrator</a> on Windows</li>
@@ -101,16 +106,16 @@
 				 <li><a href="http://www.nvaccess.org/">Download NVDA for Windows</a> for free (<a href="http://www.nvaccess.org/donate/">a small donation</a> would be nice of you)</li>
 				 <li><a href="http://www.freedomscientific.com/Downloads/JAWS">JAWS is available as a free trial</a></li>
 				 <li>You can also get some <a href="https://www.paciellogroup.com/blog/2015/01/basic-screen-reader-commands-for-accessibility-testing/">basic screen reader commands for accessibility testing</a> that covers JAWS, NVDA, Narrator, and VoiceOver</li>
-				</ul>
+				</ol>
 			 </li>
 			 <li>Is usable in in Windows High Contrast Mode.
-				<ul>
+				<ol>
 				 <li><a href="https://support.microsoft.com/en-us/instantanswers/ece8e1d7-1a7c-473c-a0f4-3c9d66fee295/turn-on-high-contrast-mode">Enable Windows High Contrast Mode</a></li>
 				 <li><a href="https://msdn.microsoft.com/en-us/library/windows/apps/hh465764.aspx">Media queries</a> for detecting Windows High Contrast Mode</li>
-				</ul>
+				</ol>
 			 </li>
 			 <li>Follows the Inclusive Design Principles.
-				<ul>
+				<ol>
 				 <li><a href="http://inclusivedesignprinciples.org/#provide-comparable-experience">Provide a comparable experience for all users</a>.</li>
 				 <li><a href="http://inclusivedesignprinciples.org/#consider-situation">Consider the user situation / context</a>.</li>
 				 <li><a href="http://inclusivedesignprinciples.org/#be-consistent">Be consistent</a>.</li>
@@ -118,73 +123,73 @@
 				 <li><a href="http://inclusivedesignprinciples.org/#offer-choice">Offer choice for users to complete tasks</a>.</li>
 				 <li><a href="http://inclusivedesignprinciples.org/#prioritise-content">Prioritise content around key tasks, features, or information</a>.</li>
 				 <li><a href="http://inclusivedesignprinciples.org/#add-value">Add value for users</a>.</li>
-				</ul>
+				</ol>
 			 </li>
 			 <li>Is resilient to resources failing to load (for when the connection drops, linked files are corrupt, there are bad headers, or the browser does not support the linked file format).
-			 	<ul>
+			 	<ol>
 				 <li>Is still usable without images.
-					<ul>
+					<ol>
 					 <li><a href="https://support.mozilla.org/en-US/questions/981640">Disable images in Firefox</a></li>
 					 <li><a href="https://support.google.com/chrome/answer/2392284?hl=en">Data Saver mode</a> in Android Chrome can degrade images</li>
 					 <li><a href="https://support.google.com/chrome/answer/114662?hl=en">Disable images in desktop Chrome</a></li>
 					 <li><a href="https://technet.microsoft.com/en-us/library/cc961183.aspx">Disable images in Internet Explorer</a></li>
 					 <li><a href="http://help.opera.com/Mac/12.10/en/images.html">Disable images in Opera</a></li>
-					</ul>
+					</ol>
 				 </li>
 				 <li>Uses progressive enhancement to account for broken/missing libraries.
-					<ul>
+					<ol>
 					 <li><a href="https://www.w3.org/wiki/Graceful_degradation_versus_progressive_enhancement">Graceful degradation versus progressive enhancement</a></li>
 					 <li><a href="http://alistapart.com/article/understandingprogressiveenhancement">Understanding Progressive Enhancement</a></li>
 					 <li><a href="https://www.smashingmagazine.com/2009/04/progressive-enhancement-what-it-is-and-how-to-use-it/">Progressive Enhancement: What It Is, And How To Use It?</a></li>
 					 <li><a href="https://www.christianheilmann.com/2015/02/18/progressive-enhancement-is-not-about-javascript-availability/">Progressive Enhancement is not about JavaScript availability</a></li>
 					 <li><a href="https://www.gov.uk/service-manual/technology/using-progressive-enhancement">Using progressive enhancement</a></li>
-					</ul>
+					</ol>
 				 </li>
 				 <li>Is still usable without custom typefaces, which includes icon fonts.</li>
-				</ul>
+				</ol>
 			 </li>
 			 <li>Accounts for multiple input types; assumes all or none are available at any given time.
-				<ul>
+				<ol>
 				 <li>Keyboard</li>
 				 <li>Mouse</li>
 				 <li>Touch</li>
 				 <li>Stylus</li>
-				 <li>Et cetera</li>
-				</ul>
+				 <li>Voice</li>
+				</ol>
 			 </li>
-			 <li>Costs less than $0.20 in U.S. dollars (with exceptions).
-				<ul>
+			 <li>Costs less than $0.20 in U.S. dollars (with reasonable exceptions).
+				<ol>
 				 <li>Use <a href="https://whatdoesmysitecost.com/">What Does My Site Cost?</a> to test</li>
 				 <li>At the very least, follows a page budget based on good data for the audience.</li>
-				</ul>
+				</ol>
 			 </li>
 			 <li>Has useful print styles.
-				<ul>
+				<ol>
 				 <li><a href="http://alistapart.com/article/goingtoprint">CSS Design: Going to Print</a></li>
 				 <li><a href="https://www.smashingmagazine.com/2011/11/how-to-set-up-a-print-style-sheet/">How To Set Up A Print Style Sheet</a></li>
 				 <li><a href="http://www.creativebloq.com/responsive-web-design/make-your-website-printable-css-3132929">Make your website printable with CSS</a></li>
 				 <li><a href="https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/">Designing For Print With CSS</a></li>
-				</ul>
+				</ol>
 			 </li>
 			 <li>Has valid code, with justification for non-valid code (such as browser bugs).
-				<ul>
+				<ol>
 				 <li><a href="https://validator.w3.org/">W3C Markup Validation Service</a></li>
 				 <li><a href="https://html5.validator.nu/">W3C (X)HTML5 Validator</a></li>
 				 <li><a href="https://jigsaw.w3.org/css-validator/">W3C CSS Validation Service</a></li>
-				</ul>
+				</ol>
 			 </li>
 			 <li>Works in multiple browsers that represent the market share of the audience.
-				<ul>
+				<ol>
 				 <li><a href="http://adrianroselli.com/2013/05/dont-use-global-browser-stats.html">Don’t Use Global Browser Stats</a></li>
 				 <li><a href="http://mediatemple.net/blog/tips/browser-statistics-matter/">The Browser Statistics That Matter</a></li>
-				</ul>
+				</ol>
 			 </li>
 			</ol>
 		</main>
 
 		<footer>
 			<p>
-			<a href="https://github.com/aardrian/DoesYourSiteDeserveRecognition.com">Suggestions, corrections welcome on GitHub</a> or <a href="https://twitter.com/aardrian">via the Twitters</a>.
+			<a href="https://github.com/aardrian/DoesYourSiteDeserveRecognition.com">Suggestions, corrections welcome on GitHub</a> or <a href="http://twitter.com/home?status=@aardrian+%23DoesMySiteDeserveRecognition+">via the Twitters</a>.
 			</p>
 		</footer>
 
