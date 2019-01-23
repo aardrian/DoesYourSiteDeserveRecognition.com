@@ -23,7 +23,7 @@
 		footer{margin-top:4em;}
 		@media screen {body{background-color:#f5f5f5;color:#333;}main,header,footer{max-width:50em;margin-left:auto;margin-right:auto;font-size:120%;}}
 		@media screen and (-ms-high-contrast: active) {svg path{fill:windowText;}}
-		@media print {header svg{max-width:5in;}header::before{content: url(http://chart.apis.google.com/chart?chs=120x120&cht=qr&chl=http%3A%2F%2Fdoesmysitedeserverecognition.com%2F);position:absolute;top:-.125in;right:-.125in;}body{color:#000;}li::before{content:'';display:inline-block;width:1em;height:1em;box-sizing:border-box;border:.1em solid #000;margin:0 .5em -.15em 0;}main a[href]::after{content:" [" attr(href)"]";word-wrap:break-word;}a:link,a:visited{color:#000;text-decoration:none;}li{orphans:2;widows:2;}}
+		@media print {header svg{max-width:5in;}header::before{content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuAQMAAACVwqStAAAABlBMVEUAAAD///+l2Z/dAAABFElEQVRIx8WW0a1GIQiDmzgAI7m6IzkASW8tJ/8doeTEUz5eDKAI2+7iuiAPr0ECL5J3Lx7UWXdLC2TwhTxYNMCndxAPoHQaO2GOBDH5ZJ3pnSlaBNv2ur/PIIFpQ1GsFbfbCYz6MiQp5g5CBEv2RMjJWRcRwRdiwHij0RFMCvzWxZPCDXx5khX77fQggovQ30xgznon8IwgeVM3u0ACf7fdw+gZSnU6gueB8OQDEils+dVKawOSSGBX6Ukf7u/9EsEzASZP7QuPzODFb18GnNbuBKbNGeILSl8ggW3bcs+gVrATeFp42lliNpjB/89boFw0MojlzSBy8ASxvHY7z6BGBLto09Gw+4IJbNvyfP2bVQT/AfGvSAx9lGUYAAAAAElFTkSuQmCC);position:absolute;top:0;right:1in;width:1in;height:1in;}body{background-color:#fff;color:#000;}li::before{content:'';display:inline-block;width:1em;height:1em;box-sizing:border-box;border:.1em solid #000;margin:0 .5em -.15em 0;}main a[href]::after{content:" [" attr(href)"]";word-wrap:break-word;}a:link,a:visited{color:#000;text-decoration:none;}li{orphans:2;widows:2;}}
 		</style>
 
 		<meta name="generator" content="Windows Notepad">
@@ -102,7 +102,11 @@
 			</p>
 
 			<p>
-			Ask yourself, <em>does my site deserve recognition?</em> Further, if you are someone who is awarding sites or referencing them as great examples, then maybe you should ask yourself the same question as if you were the site owner.
+			Ask yourself, <em>Does my site deserve recognition?</em>
+			</p>
+			
+			<p>
+			Further, if you are someone who is awarding sites or referencing them as great examples, then maybe you should ask yourself the same question as if you were the site owner.
 			</p>
 
 			<p>
@@ -135,6 +139,20 @@
 					 <li>Robust - Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.</li>
 					</ol>
 				 </li>
+				 <li>Follows the <a href="https://w3c.github.io/using-aria/#checklist">Custom Control Accessible Development Checklist</a> for any custom controls on the site:
+					<ol>
+					 <li>Can you get to the control via the keyboard?</li>
+					 <li>Can you use the control with the keyboard?</li>
+					 <li>Can you use the control with touch gestures? With assistive technology enabled?</li>
+					 <li>Can you operate the control using the standard keys and/or touch gestures for the control type?</li>
+					 <li>Can you easily see it when the control has focus?</li>
+					 <li>The control has a text label that is exposed as an accessible name in accessibility APIs.</li>
+					 <li>The control has an appropriate role exposed in accessibility APIs.</li>
+					 <li>The control has any UI states and properties that it has exposed in accessibility APIs.</li>
+					 <li>The control label/description/icon and its states are perceivable/usable for low vision users.</li>
+					 <li>The control is perceivable/usable when High Contrast Mode is enabled.</li>
+					</ol>
+				</li>
 				</ol>
 			 </li>
 			 <li>Works in common screen readers.
@@ -187,6 +205,7 @@
 					</ol>
 				 </li>
 				 <li>Is still usable without custom typefaces, which includes icon fonts.</li>
+				 <li>Is still functional when common ad blocking tools are used.</li>
 				</ol>
 			 </li>
 			 <li>Accounts for multiple input types; assumes all or none are available at any given time.
